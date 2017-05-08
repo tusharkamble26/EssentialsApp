@@ -1,0 +1,15 @@
+<div style="margin-left: 20px;">
+  {{#link-to 'messages.new' class="button" }}
+    Rate Us {{/link-to}}
+</div>
+
+
+{{outlet}}
+<div style="padding:40px">
+  <ul>
+    {{#each model as |message|}}
+      <li class=" jumbo" style="border-radius: 20px;display:block;padding:20px;border-style: ridge;list-style: none;margin-bottom: 10px;">
+        {{message.name}}: {{message.body}}</li>
+    {{/each}}
+  </ul>
+</div>

@@ -1,0 +1,9 @@
+<div class="new-msg-form" style="padding-left:80px;size:25px; padding-top:50px">
+  {{input type="text" style="size:25px" placeholder="Name" value=name class="name-input"}}
+  {{input type="text" placeholder="Message" value=body class="msg-input"}}
+    <button {{action 'addMessage'}} class="submit">Submit</button>
+</div>
+
+{{#each message in model}}
+    <div class="each-msg">{{message.name}}: {{message.body}}</div>
+{{/each}}

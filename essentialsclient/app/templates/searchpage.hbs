@@ -1,0 +1,5 @@
+<form {{action "displayres" this on="submit"}}>
+  <label for="term">Cuisine:</label> {{input value=model.search.term type="text" class="form-control" name="term" required=true}}
+  <label for="location">Location:</label> {{input value=model.search.location type="text" class="form-control" name="location" required=true}}
+  <button type="submit">Search</button>
+</form>

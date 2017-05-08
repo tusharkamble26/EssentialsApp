@@ -1,0 +1,12 @@
+{
+  "name": "essentialsclient",
+  "dependencies": {
+    "ember": "~2.4.3",
+    "ember-cli-shims": "0.1.1",
+    "ember-cli-test-loader": "0.2.2",
+    "ember-qunit-notifications": "0.1.0",
+    "bootstrap-sass": "^3.3.7",
+    "firebase": "^3.9.0",
+    "emberfire": "^2.0.7"
+  }
+}

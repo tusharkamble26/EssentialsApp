@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="menu">
+    {{#link-to 'index'}}
+    <h1>
+        <em>Essentials.com</em>
+      </h1>
+    {{/link-to}}
+    <div class="links" style="padding-left: 250px;">
+      {{#link-to 'homepage'}}
+        Home
+      {{/link-to}}
+      {{#link-to 'searchpage'}}
+        Search
+      {{/link-to}}
+      {{#link-to 'messages'}}
+        Reviews
+      {{/link-to}}
+      {{#link-to 'about'}}
+        About
+      {{/link-to}}
+      {{#link-to 'about'}}
+        Contact
+      {{/link-to}}
+    </div>
+  </div>
+
+  <div class="body">
+    {{outlet}}
+
+  </div>
+</div>
