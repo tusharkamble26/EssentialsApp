@@ -1,11 +1,10 @@
-<div class="container">
-  <div class="menu">
+<div class="menu" style="height: 70px;">
     {{#link-to 'index'}}
     <h1>
-        <em>Essentials.com</em>
+        <em>Gourmet.com</em>
       </h1>
     {{/link-to}}
-    <div class="links" style="padding-left: 250px;">
+    <div class="links" style="padding-left: 500px;">
       {{#link-to 'homepage'}}
         Home
       {{/link-to}}
@@ -18,14 +17,10 @@
       {{#link-to 'about'}}
         About
       {{/link-to}}
-      {{#link-to 'about'}}
-        Contact
-      {{/link-to}}
-    </div>
+      </div>
   </div>
 
-  <div class="body">
+  <div class="body" style="background-image: url(assets/images/background.jpg);height:3500px;width=100%">
     {{outlet}}
 
   </div>
-</div>

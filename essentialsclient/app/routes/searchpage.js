@@ -12,8 +12,8 @@ actions: {
   input: function(response){
     //console.log(response);
     this.transitionTo('search', response.term, response.location);
-    //this.transitionTo('/search?term=' + response.term + '&location=' + response.location);
+
   }
 }
-  //search: Ember.computed.alias('controller.model.search'),
+  
 });

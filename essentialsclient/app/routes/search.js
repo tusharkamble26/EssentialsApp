@@ -8,11 +8,8 @@ export default Ember.Route.extend({
      //console.log(this.serialize.location);
     var host = this.store.adapterFor('searchapplication').get('host');
     var url = host + '/search?term='+params.term+'&location='+params.location+'';
-    //this.store.queryRecord('search', {term: 'food', location: 'fullerton'})
+
     return Ember.$.getJSON(url);
   }
-  // serialize: function(response){
-  //   //console.log(response);
-  //   //return {term: response.get('term'), location: response.get('location')}
-  // }
+  
 });

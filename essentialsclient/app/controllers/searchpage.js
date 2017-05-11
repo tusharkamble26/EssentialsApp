@@ -8,9 +8,6 @@ export default Ember.Controller.extend({
       var re = this.get('search');
       var food = re.term;
       var location = re.term;
-      //console.log("Food" + food);
-      // console.log(re.location);
-      //self.transitionToRoute('search', {queryParams: {re}});
       self.send('input', re);
     }
   }
