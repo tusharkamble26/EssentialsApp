@@ -36,6 +36,14 @@ cd esentialsclient
 ember server
 ```
 
+Note: For the connection with the yelp api we need a secret client id and key which need to be generated as stated in Setup and installation section. We need to update the value of below fields in index.js
+
+```
+const clientId = "clientid";
+const clientSecret = "clientkey";
+```
+
+
 ## Funtionalities:
 
 - Search bar for finding a particular restaurant.
