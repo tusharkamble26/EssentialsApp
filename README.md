@@ -98,3 +98,34 @@ Step 4:
 
 - The About pages displays all the information about our development team.
 ![about](https://cloud.githubusercontent.com/assets/25421655/26038770/a7223296-38c4-11e7-988c-cb1db7af5984.jpg)
+
+## Technical Details:
+#### Server side code:
+##### Node.js Server
+
+* The server is used to call the Yelp API and return the data to the client in form of JSON.
+* The server was used to have more control over the data retrieved from Yelp. Only the data necessary for the gourmet.com was returned from server side and other data returned from Yelp was eliminated.
+* The Node.js server was designed to detect the keyword "search" in the request URL. If detected, the two parameter values "term" and "location" was passed to the Yelp API to get the relevant data. (Eg: term = food and location= Fullerton would return all the food joints in Fullerton).
+```javascript
+var server = http.createServer(function(req, res) {
+      var parameters = url.parse(req.url, true);
+      var query = parameters.query;
+      var reqTerm = query["term"];
+      var reqLoc = query["location"];
+      console.log(parameters);
+      if(parameters.pathname.includes('search')){
+        console.log("In Search if");
+        yelp.accessToken(clientId, clientSecret).then(response => {
+           const token = response.jsonBody.access_token;
+           const client = yelp.client(token);
+           client.search({
+               term: reqTerm,
+               location: reqLoc
+           }).then(response => {
+             
+                res.setHeader('Content-Type', 'application.json');
+                res.end(JSON.stringify(response.jsonBody.businesses));
+           });
+       });
+    }
+```
