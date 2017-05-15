@@ -56,49 +56,6 @@ const clientSecret = "clientkey";
 - Firebase plugin renders all the comments in real time.
 
 
-
-## User Manual:
-
-Step 1:
-
-- Launch the application using url (http://localhost:4200)
-- The web page will look like the screenshot below.
-
-![homepage](https://cloud.githubusercontent.com/assets/25421655/26038737/17c6119e-38c4-11e7-969a-18091e340f9a.jpg)
-
-- The HomePage has the below functionalities:
-- Home : This renders you to the Homepage
-- Search: This renders you to the SearchPage
-- Reviews: This renders you to add reviews to our website.
-- About : Thi displays the information about the team members.
-
-
-Step 2:
-
-- When you click on search link below page will be displayed.
-![searchpage](https://cloud.githubusercontent.com/assets/25421655/26038740/17c7e398-38c4-11e7-96ae-9bb052865012.jpg)
-- It has two options:
-- Search by Cuisine
-- Search by location
-- When you hit on submit after entering the cusine and location it will display the below page with all the restauratnts available in that location.
-![searchresult](https://cloud.githubusercontent.com/assets/25421655/26038738/17c658c0-38c4-11e7-8ade-a3c3666b7d64.jpg)
-
-
-
-Step 3:
-
-- When you click on RateUs links below page will be displayed.
-- The page displays the existing reviews.
-![reviews](https://cloud.githubusercontent.com/assets/25421655/26038739/17c7e78a-38c4-11e7-944a-3eca47d8ea29.jpg)
--  When you click on RateUs button the below page will be displayed.
-- You can add a review about our webpage in the fields provided.
-
-![rateus](https://cloud.githubusercontent.com/assets/25421655/26038736/17c5e84a-38c4-11e7-90a5-c6cf09c569f6.jpg)
-Step 4:
-
-- The About pages displays all the information about our development team.
-![about](https://cloud.githubusercontent.com/assets/25421655/26038770/a7223296-38c4-11e7-988c-cb1db7af5984.jpg)
-
 ## Technical Details:
 #### Server side code:
 ##### Node.js Server
@@ -172,3 +129,48 @@ export default Ember.Route.extend({
 });
 ```
 * The returned data was then displayed in the search results.
+
+
+
+## User Manual:
+
+Step 1:
+
+- Launch the application using url (http://localhost:4200)
+- The web page will look like the screenshot below.
+
+![homepage](https://cloud.githubusercontent.com/assets/25421655/26038737/17c6119e-38c4-11e7-969a-18091e340f9a.jpg)
+
+- The HomePage has the below functionalities:
+- Home : This renders you to the Homepage
+- Search: This renders you to the SearchPage
+- Reviews: This renders you to add reviews to our website.
+- About : Thi displays the information about the team members.
+
+
+Step 2:
+
+- When you click on search link below page will be displayed.
+![searchpage](https://cloud.githubusercontent.com/assets/25421655/26038740/17c7e398-38c4-11e7-96ae-9bb052865012.jpg)
+- It has two options:
+- Search by Cuisine
+- Search by location
+- When you hit on submit after entering the cusine and location it will display the below page with all the restauratnts available in that location.
+![searchresult](https://cloud.githubusercontent.com/assets/25421655/26038738/17c658c0-38c4-11e7-8ade-a3c3666b7d64.jpg)
+
+
+
+Step 3:
+
+- When you click on RateUs links below page will be displayed.
+- The page displays the existing reviews.
+![reviews](https://cloud.githubusercontent.com/assets/25421655/26038739/17c7e78a-38c4-11e7-944a-3eca47d8ea29.jpg)
+-  When you click on RateUs button the below page will be displayed.
+- You can add a review about our webpage in the fields provided.
+
+![rateus](https://cloud.githubusercontent.com/assets/25421655/26038736/17c5e84a-38c4-11e7-90a5-c6cf09c569f6.jpg)
+Step 4:
+
+- The About pages displays all the information about our development team.
+![about](https://cloud.githubusercontent.com/assets/25421655/26038770/a7223296-38c4-11e7-988c-cb1db7af5984.jpg)
+
