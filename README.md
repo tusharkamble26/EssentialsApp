@@ -129,3 +129,46 @@ var server = http.createServer(function(req, res) {
        });
     }
 ```
+
+#### Client side code:
+##### Ember app
+* In searchpage there are two input fields which accepts "term" and "location". (Eg: term=food and location="Fullerton" will display all the food joints in Fullerton)
+* After submitting the values, alias of the model was created in the controller and returned the values to the "input" action method of the route.
+```javascript
+export default Ember.Controller.extend({
+  search: Ember.computed.alias('model.search'),
+  actions: {
+    displayres() {
+      var self = this;
+      var re = this.get('search');
+      var food = re.term;
+      var location = re.term;
+      self.send('input', re);
+    }
+  }
+});
+```
+* In route, Object was created for the model and in "input" action method the values were passed to the "search" route as parameters.
+```javascript
+model(){
+    return Ember.RSVP.hash({
+      search: Ember.Object.create()
+    });
+},
+actions: {
+  input: function(response){
+    this.transitionTo('search', response.term, response.location);
+  }
+}
+```
+* In search route, the accepted parameters were passed as parameters to the Node.js server and data was returned into the Ember model.
+```javascript
+export default Ember.Route.extend({
+  model(params){
+    var host = this.store.adapterFor('searchapplication').get('host');
+    var url = host + '/search?term='+params.term+'&location='+params.location+'';
+    return Ember.$.getJSON(url);
+  }
+});
+```
+* The returned data was then displayed in the search results.
