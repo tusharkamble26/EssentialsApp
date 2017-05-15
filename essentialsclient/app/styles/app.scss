@@ -1,1 +1,104 @@
 @import 'bootstrap';
+
+.menu{
+  height: 70px;
+}
+.links{
+  padding-left: 500px;
+}
+
+.images{
+  margin-top: 50px;
+}
+.main{
+  background-image: url("../assets/images/background.jpg");
+  height: 1000px;
+  width: 100%;
+}
+
+h3{
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+.harshada{
+  height: 200px;
+  width: 200px;
+}
+
+label{
+  color: white;
+}
+
+.heading{
+  color:white;
+  font-size:52px;
+}
+
+.search{
+  float: inherit;
+  margin-top: 50px;
+}
+
+.reviews{
+  margin-left: 150px;
+  float:center;
+  margin-top: -23px;
+}
+
+h2{
+  color: white;
+}
+
+.rate{
+  margin-left: 45px;
+  margin-top: 50px;
+
+}
+
+.messages{
+  padding:40px;
+}
+
+.jumbo{
+  border-radius: 20px;
+  display:block;
+  padding:20px;
+  border-style: ridge;
+  list-style: none;
+  margin-bottom: 10px;
+
+}
+
+.ratebutton{
+    margin-top: 50px;
+}
+
+.tag{
+  margin-top: 75px;
+}
+
+.figures{
+  margin-top: 50px;
+}
+
+
+.container{
+  width: 880px;
+  margin-left: 50px;
+  padding-top: 15px;
+  float: left;
+}
+
+.searchpage{
+  margin-top: 50px;
+  margin-left: 20px;
+
+}
+
+.fig2{
+  margin-top: 100px;
+}

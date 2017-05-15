@@ -1,9 +1,13 @@
+<div class="searchpage">
+
 <form {{action "displayres" this on="submit"}}>
-  <label style= "color:white;" for="term">Cuisine:</label> {{input value=model.search.term type="text" class="form-control" name="term" required=true}}
-  <label style= "color:white;" for="location">Location:</label> {{input value=model.search.location type="text" class="form-control" name="location" required=true}}
+  <label for="term">Cuisine:</label> {{input value=model.search.term type="text" class="form-control" name="term" required=true}}
+  <label  for="location">Location:</label> {{input value=model.search.location type="text" class="form-control" name="location" required=true}}
 <br>
   <button type="submit">Search</button>
-  <br><br><br><br><br><br><br><br>
+  <div class="figures">
+
+
 
   <div class="col-md-4">
     <img src="assets/images/mexican-food.jpg" alt="member3" height="200px" width="200px" class="img-circle float-right">
@@ -16,5 +20,6 @@
   <div class="col-md-4">
     <img src="assets/images/pani.jpg" alt="member5" height="200px" width="200px" class="img-circle">
   </div>
-
+</div>
 </form>
+</div>

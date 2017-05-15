@@ -1,14 +1,14 @@
-<div style="margin-left: 45px;margin-top: 20px;">
-  {{#link-to 'messages.new' class="button" }}
+<div class="rate">
+  {{#link-to 'messages.new' class="button" id="ratebutton"}}
     Rate Us {{/link-to}}
 </div>
 
 
 {{outlet}}
-<div style="padding:40px">
+<div class="messages">
   <ul>
     {{#each model as |message|}}
-      <li class=" jumbo" style="border-radius: 20px;display:block;padding:20px;border-style: ridge;list-style: none;margin-bottom: 10px;">
+      <li class=" jumbo">
         {{message.name}}: {{message.body}}</li>
     {{/each}}
   </ul>
